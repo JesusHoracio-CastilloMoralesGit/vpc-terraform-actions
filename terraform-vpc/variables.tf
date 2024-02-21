@@ -11,8 +11,3 @@ variable "subnets_cidr" {
 variable "sg_rules" {
   type = any
 }
-
-variable "ec2_names" {
-  description = "EC2 names"
-  type = list(string)
-}

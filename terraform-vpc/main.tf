@@ -16,7 +16,6 @@ module "ec2" {
   source = "./modules/ec2"
   sg_id = module.sg.sg_id
   subnets = module.vpc.subnets_ids
-  ec2_names = var.ec2_names
 }
 
 module "alb" {
