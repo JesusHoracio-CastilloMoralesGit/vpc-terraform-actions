@@ -3,7 +3,3 @@ variable "vpc_cidr" {
   type = string
 }
 
-variable "subnets_cidr" {
-  description = "Subnet CIDR Range"
-  type = list(string)
-}
