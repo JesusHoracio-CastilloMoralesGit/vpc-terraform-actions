@@ -8,7 +8,6 @@ module "sg" {
   depends_on = [ module.vpc ]
   source = "./modules/sg"
   vpc_id = module.vpc.vpc_id
-  sg_rules = var.sg_rules
 }
 
 module "ec2" {
