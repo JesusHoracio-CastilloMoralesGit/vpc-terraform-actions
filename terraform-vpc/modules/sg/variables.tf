@@ -4,7 +4,13 @@ variable "vpc_id" {
 }
 
 variable "sg_rules" {
-  type = any
+  type = list(object({
+    type         = string
+    from_port    = number
+    to_port      = number
+    protocol     = string
+    cidr_blocks  = list(string)
+  }))
   default = {
   sg_rules = [
     {
