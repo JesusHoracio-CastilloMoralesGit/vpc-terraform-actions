@@ -11,8 +11,7 @@ variable "sg_rules" {
     protocol     = string
     cidr_blocks  = list(string)
   }))
-  default = {
-  sg_rules = [
+  default =  [
     {
         type = "ingress"
         from_port = 80
@@ -35,5 +34,4 @@ variable "sg_rules" {
         cidr_blocks = ["0.0.0.0/0"]
     }
 ]
-}
 }
